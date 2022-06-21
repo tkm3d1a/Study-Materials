@@ -428,8 +428,8 @@ __*need to finish r/b videos*__
 
 [Universal Hasing](https://www.youtube.com/watch?v=3LuaY18-BR8&ab_channel=MarkC.Wilson)
 
-![Worst Case Runtimes](/CS%205301%20-%20Foundations%20of%20Algorithms/Study%20Materials/WorstCaseRunTime_DataStructs.png)
+![Worst Case Runtimes](./WorstCaseRunTime_DataStructs.png)
 
-![Avg Case Runtimes](/CS%205301%20-%20Foundations%20of%20Algorithms/Study%20Materials/AvgCaseRunTime_DataStructs.png)
+![Avg Case Runtimes](./AvgCaseRunTime_DataStructs.png)
 
 
