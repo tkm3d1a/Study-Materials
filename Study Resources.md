@@ -259,10 +259,12 @@ int main()
 [R/B Tree Classes](https://www.youtube.com/watch?v=-qjrcxVmf2Q&ab_channel=RobEdwards)
 
 ```c++
-class RedBlackTree<k,v> {
+public class RedBlackTree<k,v> {
+private:
 	Node <k,v> root;
 	int size;
 
+public:
 	class Node<k,v>{
 		k key;
 		v value;
