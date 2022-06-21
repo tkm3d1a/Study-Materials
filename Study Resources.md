@@ -408,3 +408,9 @@ public void rotate(Node<k,v> node){
 }
 ```
 
+__*need to finish r/b videos*__
+
+[Hash Table intro](https://www.youtube.com/watch?v=Qu183GFHbZQ&ab_channel=StanfordAlgorithms)
+
+[Interesting hast tables using golang](https://www.youtube.com/watch?v=zLnJcAt1aKs&ab_channel=JunminLee)
+
