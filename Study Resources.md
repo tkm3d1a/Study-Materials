@@ -1,5 +1,5 @@
 # Resources to use for studying CS5301 @ Baylor
-*TOC goes here*
+*__TOC goes here__*
 
 1. [Module 1](#module-1---algos-and-analysis)
 2. [Module 2](#module-2---divide-and-conquer)
@@ -8,8 +8,9 @@
 5. [Module 5](#module-5---graph-search-pathing-and-strongly-connected-components-sccs)
 6. [Module 6](#module-6---focus-on-djikstras-and-heaps)
 7. [Module 8](#module-8---redblack-trees-hash-tables-bloom-filters)
+8. [Class Notes](#class-notes)
 
-~need to figure out nesting lists~
+*__need to figure out nesting lists__*
 
 ## Module 1 - Algo's and Analysis
 ---
@@ -432,4 +433,12 @@ __*need to finish r/b videos*__
 
 ![Avg Case Runtimes](./AvgCaseRunTime_DataStructs.png)
 
+[Bloom Filters](https://www.youtube.com/watch?v=bEmBh1HtYrw&ab_channel=YoavFreund)
 
+---
+
+## Class Notes
+
+### 2022-06-02 - TOPIC
+
+No topic.  Teacher wasn't able to make it, so just chit chat and no real topics covered.
