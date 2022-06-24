@@ -439,6 +439,10 @@ __*need to finish r/b videos*__
 
 ## Class Notes
 
-### 2022-06-02 - TOPIC
+### 2022-06-23 - TOPIC
 
-No topic.  Teacher wasn't able to make it, so just chit chat and no real topics covered.
+Option for problems: [Competitive programming problems](https://open.kattis.com/)
+
+*need to rewrite from written notes here*
+*start with exam answers*
+*then go to tool box notes*
