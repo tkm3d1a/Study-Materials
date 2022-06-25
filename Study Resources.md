@@ -8,6 +8,7 @@
 5. [Module 5](#module-5---graph-search-pathing-and-strongly-connected-components-sccs)
 6. [Module 6](#module-6---focus-on-djikstras-and-heaps)
 7. [Module 8](#module-8---redblack-trees-hash-tables-bloom-filters)
+8. [Module 9](#module-9---greedy-algorithms)
 8. [Class Notes](#class-notes)
 
 *__need to figure out nesting lists__*
@@ -437,12 +438,18 @@ __*need to finish r/b videos*__
 
 ---
 
+## Module 9 - Greedy Algorithms
+
+[Greedy Algo resource](https://www.programiz.com/dsa/greedy-algorithm)
+
+---
+
 ## Class Notes
 
-### 2022-06-23 - TOPIC
+### 2022-06-23 - Midterm I Review
 
 Option for problems: [Competitive programming problems](https://open.kattis.com/)
 
-*need to rewrite from written notes here*
-*start with exam answers*
-*then go to tool box notes*
+- *need to rewrite from written notes here*
+- *start with exam answers*
+- *then go to tool box notes*
