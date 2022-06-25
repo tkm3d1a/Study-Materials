@@ -442,6 +442,10 @@ __*need to finish r/b videos*__
 
 [Greedy Algo resource](https://www.programiz.com/dsa/greedy-algorithm)
 
+[Greedy video 1 - Total weighted time to completion](https://www.youtube.com/watch?v=WJpxJXzahIQ&ab_channel=TimKearns)
+
+[Greedy video 2 - Exchange proof](https://www.youtube.com/watch?v=qG0UfYTmN_Y&ab_channel=TimKearns)
+
 ---
 
 ## Class Notes
