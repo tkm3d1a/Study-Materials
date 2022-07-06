@@ -446,6 +446,48 @@ __*need to finish r/b videos*__
 
 [Greedy video 2 - Exchange proof](https://www.youtube.com/watch?v=qG0UfYTmN_Y&ab_channel=TimKearns)
 
+[Primms examples](https://www.youtube.com/watch?v=jsmMtJpPnhU&t=364s&ab_channel=WilliamFiset)
+
+Primms Lazy Pseudocode
+```python
+function lazyPrims(s=0):
+	m = n-1 #number of edges in MST
+	edgeCount, mstCost = 0, 0
+	mstEdges = [null,...,null] #size m
+	addEdges(s)
+
+	while(!pq.isEmpty() and edgeCount != m):
+		edge = pq.dequeue()
+		nodeIndex = edge.to
+
+		if visited[nodeIndex]:
+			continue
+
+		mstEdges[edgeCount++] = edge #this adds to mstEdges AND increments edgecount at the same time
+		mstCost += edge.cost
+
+		addEdges(nodeIndex)
+	
+	if edgeCount != m:
+		return(null, null) #case for no MST existing
+	
+	return (mstCost, mstEdges)
+```
+```python
+function addEdges(nodeIndex):
+	#mark the current node as visited
+	visited[nodeIndex] = true
+
+	#Iterate over all edges going out from current node.
+	#Add edges to the PQ which point to an unvisited node.
+	edges = g[nodeIndex]
+	for(edge:edges):
+		if !visited[edge.to]:
+			pq.enqueue(edge)
+```
+
+[Proof of Prims MST](https://www.youtube.com/watch?v=UfhUr5QzfiI&ab_channel=TimKearns)
+
 ---
 
 ## Class Notes
@@ -457,3 +499,7 @@ Option for problems: [Competitive programming problems](https://open.kattis.com/
 - *need to rewrite from written notes here*
 - *start with exam answers*
 - *then go to tool box notes*
+
+### 2022-06-29 - Random
+
+[Exchange Argument reference](https://people.cs.pitt.edu/~kirk/cs1510/notes/greedynotes.pdf)
