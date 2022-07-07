@@ -446,7 +446,15 @@ __*need to finish r/b videos*__
 
 [Greedy video 2 - Exchange proof](https://www.youtube.com/watch?v=qG0UfYTmN_Y&ab_channel=TimKearns)
 
-[Primms examples](https://www.youtube.com/watch?v=jsmMtJpPnhU&t=364s&ab_channel=WilliamFiset)
+Prim's Videos
+- [Lazy](https://www.youtube.com/watch?v=jsmMtJpPnhU&t=364s&ab_channel=WilliamFiset)
+	- Uses a basic Priority queue
+- [Eager](https://www.youtube.com/watch?v=xq3ABa-px_g&ab_channel=WilliamFiset)
+	- Uses an INDEXED priority queue
+	- This is a hash table mixed with a minimum priorty queue
+	- Requires relaxing edges
+		- Relaxing here means replacing edges if the new edge has a lower cost than the old edge
+	- TODO: Need to write psuedo code from this video
 
 Primms Lazy Pseudocode
 ```python
@@ -454,6 +462,7 @@ function lazyPrims(s=0):
 	m = n-1 #number of edges in MST
 	edgeCount, mstCost = 0, 0
 	mstEdges = [null,...,null] #size m
+
 	addEdges(s)
 
 	while(!pq.isEmpty() and edgeCount != m):
@@ -503,3 +512,10 @@ Option for problems: [Competitive programming problems](https://open.kattis.com/
 ### 2022-06-29 - Random
 
 [Exchange Argument reference](https://people.cs.pitt.edu/~kirk/cs1510/notes/greedynotes.pdf)
+
+### 2022-07-06 - Exam II Prep
+
+- Kruskals is last thing that might make it on the test
+- Focus on 6 8 and 9, and maybe a little of 10
+- Be prepared to draw a lot more graphs
+- going to be about 5 questions
