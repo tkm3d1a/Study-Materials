@@ -9,6 +9,7 @@
 6. [Module 6](#module-6---focus-on-djikstras-and-heaps)
 7. [Module 8](#module-8---redblack-trees-hash-tables-bloom-filters)
 8. [Module 9](#module-9---greedy-algorithms)
+9. [Module 10](#module-10---kruskals-and-disjoint-sets)
 8. [Class Notes](#class-notes)
 
 *__need to figure out nesting lists__*
@@ -501,9 +502,20 @@ function addEdges(nodeIndex):
 
 ## Module 10 - Kruskals and disjoint sets
 
+### Kruskal's
+
 [Kruskals #1](https://www.youtube.com/watch?v=5xosHRdxqHA&ab_channel=BoQian)
 
 [Kruskal's Proof by Contradiction](https://www.youtube.com/watch?v=_N9Qz0IzxaA&ab_channel=NatarajanMeghanathan)
+
+[Kruskals #2](https://www.youtube.com/watch?v=JZBQLXgSGfs&ab_channel=WilliamFiset)
+
+How does Kruskal's work?
+1. Sort edges by ascending edge weight
+2. Walk through sorted edges and look at the two nodes the edge belongs to.
+	- if the nodes are in the same union, continue
+	- if the nodes ARE NOT in the same union, add them to the set, and unify the nodes
+3. Terminate when all edges processed OR all vertices have been vistied
 
 ### Union Find/Disjoint set
 
@@ -525,6 +537,26 @@ Notes:
 	- image processing
 - Complexity:
 	- ![Complexity](./img/UnionFind_TimeComplexity.png)
+
+### MST Applications
+
+[Clustering applications/problems](https://www.youtube.com/watch?v=MSSzOs1X4K8&ab_channel=StanfordAlgorithms)
+
+Clustering problem:
+- Goal
+	- Given n "points"
+		- Webpages, images, fragments, etc
+	- Cluster them into coherent groups
+- Assumptions
+	- as input, given a (dis)similarity measure
+		- a distance between point pairs
+		- Example: Eucledian distance, some numerical similarity, possibly hash comparing?
+	- symmetric measures
+- Final
+	- Same cluster -> 'nearby'
+- Points -> verticies
+- Distance -> edge costs
+- Point pairs -> edges
 
 ---
 
