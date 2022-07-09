@@ -430,9 +430,9 @@ __*need to finish r/b videos*__
 
 [Universal Hasing](https://www.youtube.com/watch?v=3LuaY18-BR8&ab_channel=MarkC.Wilson)
 
-![Worst Case Runtimes](./WorstCaseRunTime_DataStructs.png)
+![Worst Case Runtimes](./img/WorstCaseRunTime_DataStructs.png)
 
-![Avg Case Runtimes](./AvgCaseRunTime_DataStructs.png)
+![Avg Case Runtimes](./img/AvgCaseRunTime_DataStructs.png)
 
 [Bloom Filters](https://www.youtube.com/watch?v=bEmBh1HtYrw&ab_channel=YoavFreund)
 
@@ -496,6 +496,35 @@ function addEdges(nodeIndex):
 ```
 
 [Proof of Prims MST](https://www.youtube.com/watch?v=UfhUr5QzfiI&ab_channel=TimKearns)
+
+---
+
+## Module 10 - Kruskals and disjoint sets
+
+[Kruskals #1](https://www.youtube.com/watch?v=5xosHRdxqHA&ab_channel=BoQian)
+
+[Kruskal's Proof by Contradiction](https://www.youtube.com/watch?v=_N9Qz0IzxaA&ab_channel=NatarajanMeghanathan)
+
+### Union Find/Disjoint set
+
+[Intro](https://www.youtube.com/watch?v=ibjEGG7ylHk&ab_channel=WilliamFiset)
+
+Notes:
+- Union find is a data structure that tracks elements
+	- Elements are split into one or more disjoint sets
+- Two primary operations
+	1. find
+		- Finds what group that element belongs to
+	2. union
+		- merges two groups together
+- Where is it used?
+	- Kruskal's MST
+	- Grid percolation
+	- network connectivity
+	- least common ancestor in a tree
+	- image processing
+- Complexity:
+	- ![Complexity](./img/UnionFind_TimeComplexity.png)
 
 ---
 
