@@ -496,6 +496,8 @@ function addEdges(nodeIndex):
 			pq.enqueue(edge)
 ```
 
+[Diff between Dijkstra's and Prim's](https://www.youtube.com/watch?v=K_1urzWrzLs&ab_channel=BackToBackSWE)
+
 [Proof of Prims MST](https://www.youtube.com/watch?v=UfhUr5QzfiI&ab_channel=TimKearns)
 
 ---
