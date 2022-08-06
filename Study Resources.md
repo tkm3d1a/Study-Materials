@@ -10,6 +10,7 @@
 7. [Module 8](#module-8---redblack-trees-hash-tables-bloom-filters)
 8. [Module 9](#module-9---greedy-algorithms)
 9. [Module 10](#module-10---kruskals-and-disjoint-sets)
+1. [Extra Notes](#extra-notesdynamic-programming)
 8. [Class Notes](#class-notes)
 
 *__need to figure out nesting lists__*
@@ -425,7 +426,7 @@ __*need to finish r/b videos*__
 
 [Hash Table intro](https://www.youtube.com/watch?v=Qu183GFHbZQ&ab_channel=StanfordAlgorithms)
 
-[Interesting hast tables using golang](https://www.youtube.com/watch?v=zLnJcAt1aKs&ab_channel=JunminLee)
+[Interesting hash tables using golang](https://www.youtube.com/watch?v=zLnJcAt1aKs&ab_channel=JunminLee)
 
 [Hash Table and Hash Functions](https://www.youtube.com/watch?v=KyUTuwz_b7Q&ab_channel=ComputerScience)
 
@@ -498,6 +499,10 @@ function addEdges(nodeIndex):
 
 [Proof of Prims MST](https://www.youtube.com/watch?v=UfhUr5QzfiI&ab_channel=TimKearns)
 
+[Time-Slot Problem - Greedy Solution](https://www.youtube.com/watch?v=BWlXudP7Unk&ab_channel=CourseGrinder)
+
+[Huffman encoding - Data compression](https://www.youtube.com/watch?v=5riYFDldeOY&ab_channel=SunilDhimal)
+
 ---
 
 ## Module 10 - Kruskals and disjoint sets
@@ -560,6 +565,22 @@ Clustering problem:
 
 ---
 
+
+
+
+
+## Extra notes/Dynamic Programming
+
+[Max Sum contiguous subarray example 1](https://www.youtube.com/watch?v=9lMnCiRSNCg&ab_channel=Studytonight)
+
+[Max Sum contiguous subarray example 2](https://www.youtube.com/watch?v=2MmGzdiKR9Y&ab_channel=BackToBackSWE)
+
+*Max Contiguous notes*:
+- use the max() function to compare to previous
+- if chose first item, array length resets
+- if chose second item for max, array length increments
+- can use array length variable to recreate the max contiguous window
+
 ## Class Notes
 
 ### 2022-06-23 - Midterm I Review
@@ -580,3 +601,10 @@ Option for problems: [Competitive programming problems](https://open.kattis.com/
 - Focus on 6 8 and 9, and maybe a little of 10
 - Be prepared to draw a lot more graphs
 - going to be about 5 questions
+
+### 2022-07-20 - Exam II review
+
+*see notes in concepts*
+*possibly import over after the fact*
+
+[Knapsack problem option](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/)
