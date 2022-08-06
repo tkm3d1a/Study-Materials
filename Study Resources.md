@@ -497,6 +497,8 @@ function addEdges(nodeIndex):
 			pq.enqueue(edge)
 ```
 
+[Diff between Dijkstra's and Prim's](https://www.youtube.com/watch?v=K_1urzWrzLs&ab_channel=BackToBackSWE)
+
 [Proof of Prims MST](https://www.youtube.com/watch?v=UfhUr5QzfiI&ab_channel=TimKearns)
 
 [Time-Slot Problem - Greedy Solution](https://www.youtube.com/watch?v=BWlXudP7Unk&ab_channel=CourseGrinder)
@@ -601,6 +603,7 @@ Option for problems: [Competitive programming problems](https://open.kattis.com/
 - Focus on 6 8 and 9, and maybe a little of 10
 - Be prepared to draw a lot more graphs
 - going to be about 5 questions
+<<<<<<< HEAD
 
 ### 2022-07-20 - Exam II review
 
@@ -608,3 +611,5 @@ Option for problems: [Competitive programming problems](https://open.kattis.com/
 *possibly import over after the fact*
 
 [Knapsack problem option](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/)
+=======
+>>>>>>> 73820874e9efa483e7bb296932afab1a925ba04b
