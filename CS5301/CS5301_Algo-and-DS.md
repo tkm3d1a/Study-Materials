@@ -432,9 +432,9 @@ __*need to finish r/b videos*__
 
 [Universal Hasing](https://www.youtube.com/watch?v=3LuaY18-BR8&ab_channel=MarkC.Wilson)
 
-![Worst Case Runtimes](./img/WorstCaseRunTime_DataStructs.png)
+![Worst Case Runtimes](../img/CS5301/WorstCaseRunTime_DataStructs.png)
 
-![Avg Case Runtimes](./img/AvgCaseRunTime_DataStructs.png)
+![Avg Case Runtimes](../img/CS5301/AvgCaseRunTime_DataStructs.png)
 
 [Bloom Filters](https://www.youtube.com/watch?v=bEmBh1HtYrw&ab_channel=YoavFreund)
 
@@ -543,7 +543,7 @@ Notes:
 	- least common ancestor in a tree
 	- image processing
 - Complexity:
-	- ![Complexity](./img/UnionFind_TimeComplexity.png)
+	- ![Complexity](../img/CS5301/UnionFind_TimeComplexity.png)
 
 ### MST Applications
 
@@ -603,7 +603,6 @@ Option for problems: [Competitive programming problems](https://open.kattis.com/
 - Focus on 6 8 and 9, and maybe a little of 10
 - Be prepared to draw a lot more graphs
 - going to be about 5 questions
-<<<<<<< HEAD
 
 ### 2022-07-20 - Exam II review
 
@@ -612,4 +611,3 @@ Option for problems: [Competitive programming problems](https://open.kattis.com/
 
 [Knapsack problem option](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/)
 =======
->>>>>>> 73820874e9efa483e7bb296932afab1a925ba04b
