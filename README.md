@@ -9,6 +9,6 @@ To use this repo:
 - Links to completed program assignmnets __will not__ be added
 
 Class Links:
-- [CS5301 - Foundational Algorithms](./CS5301/CS5301_Algo-and-DS.md)
-- [CS5302 - *class title here*](./CS5302/cs5302_SQL.md)
-- [CS5305 - *class title here*](./CS5305/cs5305_Found-OS.md)
+- [CS5301 - Foundations of Algorithms](./CS5301/CS5301_Algo-and-DS.md)
+- [CS5302 - Foundations of Database Design](./CS5302/cs5302_SQL.md)
+- [CS5305 - Foundations of Operating Systems](./CS5305/cs5305_Found-OS.md)
