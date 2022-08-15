@@ -1,6 +1,8 @@
 # Resources to use for studying CS5301 @ Baylor
-*__TOC goes here__*
 
+###### [Parent Directory Link](../README.md)
+
+*Table of Contents*
 1. [Module 1](#module-1---algos-and-analysis)
 2. [Module 2](#module-2---divide-and-conquer)
 3. [Module 3](#module-3---quicksort)
