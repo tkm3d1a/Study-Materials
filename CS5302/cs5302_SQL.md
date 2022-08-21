@@ -8,6 +8,9 @@
     - [Tables](#tables)
     - [Data Types](#data-types)
     - [Keys](#keys)
+    - [Relationships](#relationships)
+    - [Schemas](#schemas)
+    - [Examples](#more-examples)
 
 ## Week 1
 ### **RDBMS**
@@ -25,6 +28,28 @@ SQL is three major parts
   - Used to define the structure of the data(schema)
 - Data control language (DCL)
   - used to restrict and control access to the data
+
+Some extra notes on RDBMS...
+- Provides...
+  - Atomicity
+    - Means either everything happens or nothing happens for a transaction
+  - Consistency
+    - Means all contraints are true after a transaction commits/completes
+  - Isolation
+    - Means every transaction can pretend like it is the only transaction
+  - Durability
+    - means when updates are made and comitted, they become permanant
+  - Security
+    - Means that access is controlled
+- All of this cannot be provided by a typical file system without large amounts of custom application building
+
+*High Level System Architecture*
+|Component|Description|
+|---|---|
+|User Interface|Provides access to an outside user, highest level of abstraction|
+|Transaction Manager|Responsible for setting up the units of work within a transaction, coordinating between users available connections, etc.|
+|Query Processor|Processes and optimizes query commands.  This makes SQL commands run faster than a naive/basic implementation would allow|
+|Storage Manager|Stores and retrieves data from either external disks or from 'cloud' based stroage BLOBs|
 
 ### **Tables**
 ###### [TOC](#toc)
@@ -46,6 +71,7 @@ Representing a table:
 ```sql
 vendors(vendorID, companyName, repFirestName, repLastName, referredBy)
 ```
+
 ### **Data Types** 
 ###### [TOC](#toc)
 - Character Strings
@@ -167,7 +193,7 @@ vendors(vendorID, companyName, repFirestName, repLastName, referredBy)
 - Each row in **t1** relates to *at most* one row in **t2**
 - Each row in **t2** relates to *at most* one row in **t1**
 
-## **Schemas**
+### **Schemas**
 ###### [TOC](#toc)
 
 Schemas are the collection of tables, with relationships and attributes detailed.
@@ -175,7 +201,18 @@ Schemas are the collection of tables, with relationships and attributes detailed
 ![Example Schema](../img/CS5302/ch1_schemas.png)
 
 *Note:* A schema does **not** include the data for the tables, just information/attributes/pk/fk
-    
+
+### **More Examples**
+###### [TOC](#toc)
+
+3 Levels of data abstraction:
+
+![](../img/CS5302/wk1_3-levels-abstraction.png)
+
+Overall System structure:
+
+![System Structure](../img/CS5302/wk1_system-structure.png)
+
 ## Week 2
 ## Week 3
 ## Week 4
