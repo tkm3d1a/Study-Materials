@@ -3,6 +3,12 @@
 ###### [Parent Directory Link](../README.md)
 
 ## TOC
+1. [Week 1](#week-1)
+    - [OS](#the-need-for-oss---11)
+    - [History](#history-and-the-monitor---12)
+    - [Multiprogramming](#multiprogramming---13)
+    - [CPU](#using-the-cpu---14)
+    - [Dual Mode](#dual-mode---15)
 
 ## Week 1
 
@@ -44,6 +50,60 @@ Responsibilities of OS:
   - There is no protection fror the monitor or other tasks.  Current task coul violate existing memory footprint
   - There is no ability for executing multiple tasks at once
   - The task poorly utilizes the CPU
+
+### **Multiprogramming - 1.3**
+###### [TOC](#toc)
+
+See the diagram below for an example of no multiprgramming, i.e. sequential
+
+![Slow IO](../img/CS5305/wk1_no_multi.png)
+
+Note that Task 2 cannot even start till ALL of task 1 is complete.
+
+Basic flow for Multiprogramming:
+- Run Task at top of queue
+- Once tasks goes to I/O stage, surrender CPU to next task
+  - Once I/O is complete, requeue the task for processing
+- Execute Next task till I/O stage
+- Repeat cycle
+
+See diagram below for example of how it would work.  Note the red marks showing one task going to I/O and freeing up the processor for the next task
+
+![Example of Multiprogramming](../img/CS5305/wk1_multi.png)
+
+Multiprogramming still has limitations
+- If I/O is user I/O, once the user interacts the tasks goes to back of queue
+  - This would lead to bad user experience
+  - Time sharing can help with this by breaking up discrete execution into "quantum" time chunks
+- Unsolved issues
+  - Context switching
+    - Each task has an execution state
+  - Memory mapping
+    - Coordinating shared memory usage
+  - Protection
+    - Control over who can do what, and when they can do it
+  - Notification
+    - Error, events, quantum time period ending
+
+### **Using the CPU - 1.4**
+###### [TOC](#toc)
+
+The advent of Mul;tiprocessor was the next jump in speed
+- Multicore and Multiprocessor are the 'same' thing
+  - Multicore is multiprocessor, but all on the same chip
+  - The proximity of the cores allows for further speed increases
+
+As tasks change registers, they need to remeber their state
+
+Introducing the Memory Managment Unit (MMU)
+- Tasks physical memory as "virtual" to processes
+- Once assigning the virtual, it will handle pushing to the physical hardware for the task
+
+![MMU Diagram](../img/CS5305/wk1_mmu_diag.png)
+
+### **Dual Mode - 1.5**
+###### [TOC](#toc)
+
 ## Week 2
 ## Week 3
 ## Week 4
