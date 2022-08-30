@@ -11,6 +11,9 @@
     - [Relationships](#relationships)
     - [Schemas](#schemas)
     - [Examples](#more-examples)
+1. [Week 2](#week-2)
+    - [SELECT](#select-clause)
+    - [Aggregate Functions](#aggregate-functions)
 
 ## Week 1
 ### **RDBMS**
@@ -214,6 +217,70 @@ Overall System structure:
 ![System Structure](../img/CS5302/wk1_system-structure.png)
 
 ## Week 2
+### **SELECT Clause**
+###### [TOC](#toc)
+There are some clauses specific to ```SELECT```
+
+```DISTINCT```
+- Used to select distinct values with select
+- Essentially, elimnates any duplicate values
+- It applies to ALL values in the ```SELECT``` clause
+
+```Math operations```
+- Can use mathmatecial operators
+- ```sql
+  SELECT
+    H/AB --Note the division here
+  FROM
+    batting
+  WHERE
+    playerID='ruthba01'
+    AND yearID=1921;
+  ```
+- Not limited to single statments, can be chain, and can apply to all items in the ```SELECT``` clause
+
+```Shaping Results```
+- ```AS```
+  - Results from the  ```SELECT``` clause can be shaped with the ```AS``` command
+  - Modifies the column title to whatever is input for ```AS```
+  - Can also be done without using ```AS```, just need to utilize single quote string literals
+  - Multiple items can be shaped this way
+- ```CAST()```
+  - can cast mathmateical operations to percision and view size as needed
+  - example:
+    - ```sql
+      SELECT 
+        CAST(H/AB AS DECIMAL(4,3)) AS 'Some Title' 
+      FROM
+        ...
+      ```
+  - The above would result in H/AB being shown as 4 digits long with 3 digits after the decimal
+
+  ```COALESCE```
+  - Used to map in a math operator if a value is ```NULL```
+  - format would be: ```COALESCE(<value>, <replacementvalue>)```
+
+  ```String Operators```
+  - ```CONCAT```
+    - Format: ```CONCAT(<string1>, <string2>, ...)```
+    - Just does basic concatenation
+    - Can also use substrings in the format above
+  - ```CASE```
+    - Provides a way to check ```SELECT``` inputs against specific cases
+    - Example:
+      - ```sql
+        SELECT playerID, CASE --note case only applies to the following 'WHEN' statment
+          WHEN AB / G > 3 THEN 'Reg' --case to check agains
+          ELSE 'Sub' --else condition if case not true
+          END as type
+        FROM batting
+        WHERE teamID='DET' AND yearID=2019;
+        ```
+      
+### **Aggregate Functions**
+###### [TOC](#toc)
+Filler words here
+
 ## Week 3
 ## Week 4
 ## Week 5
