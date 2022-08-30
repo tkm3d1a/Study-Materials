@@ -8,7 +8,7 @@
     - [History](#history-and-the-monitor---12)
     - [Multiprogramming](#multiprogramming---13)
     - [CPU](#using-the-cpu---14)
-    - [Dual Mode](#dual-mode---15)
+    - [Dual Mode](#dual-mode---15) *incomplete*
 
 ## Week 1
 
@@ -105,6 +105,56 @@ Introducing the Memory Managment Unit (MMU)
 ###### [TOC](#toc)
 
 ## Week 2
+
+### **Fork and process**
+###### [TOC](#toc)
+
+Code example for fork() in C
+```C
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+
+int main(){
+
+  int argCounts; //can take command line or define this here
+  pid_t pid[argCounts - 1]; //set up an array of process id's to be used.
+
+  //creating the process'
+  int procIDx;
+  for(procIDx = 0; procIDx < argCounts-1; procIDx++){
+    pid_t newPid = fork();
+    if(newPID < 0){
+      //error message
+      //exit(1)
+    }
+
+    if(newPID > 0) {//This is the parent
+      pid[procIDx] = newPid;
+      //parent doesnt do any work directly
+    } else { //this is the child
+      //do calculations or any calls here
+      exit(0); //exits the process once calcs done
+    }
+  }
+
+  //do calculations or any calls here
+  //no 'exit' call here like in child
+  //this is the process for the top level process in the chain
+
+  //Set wait for process' to compelte
+  for(int i = 0; i < argCount - 1; i++){
+    if(waitpid(pid[i], NULL, 0) == -1){
+      perror("waitpid() failed");
+      exit(1);
+    }
+  }
+
+  exit(0); //final exit call for program
+}
+```
 ## Week 3
 ## Week 4
 ## Week 5
