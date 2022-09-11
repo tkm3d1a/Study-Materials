@@ -13,7 +13,7 @@
     - [Examples](#more-examples)
 1. [Week 2](#week-2)
     - [SELECT](#select-clause)
-    - [Aggregate Functions](#aggregate-functions)
+    - [Aggregate Functions](#aggregate-functions) *not finished*
 
 ## Week 1
 ### **RDBMS**
