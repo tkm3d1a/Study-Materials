@@ -9,6 +9,10 @@
     - [Multiprogramming](#multiprogramming---13)
     - [CPU](#using-the-cpu---14)
     - [Dual Mode](#dual-mode---15) *incomplete*
+2. [Week 2](#week-2) *incomplete*
+3. [Week 3](#week-3) *incomplete*
+    - [Schedulers](#short-and-long-term-scheduling)
+    - [NP and P Scheduling](#non-preemptive-and-preemptive-scheduling)
 
 ## Week 1
 
@@ -155,7 +159,68 @@ int main(){
   exit(0); //final exit call for program
 }
 ```
+
 ## Week 3
+
+### **Short and Long term scheduling**
+###### [TOC](#toc)
+
+**Short Term**
+
+Short term schgedule is the process that selects the next job to be run on the cpu.
+
+It selects tasks from available process awaiting execution.
+- Preemtable resources
+  - Can forcibly be removed(then returned) without ill effect
+  - Characteristics
+    - Small state so not costly to preempt
+    - OR
+    - only one resource
+  - Examples:
+    - CPU
+    - Memory
+- Non-Preemtable resources
+  - You cannot take these away from a job without causing failure
+  - Characteristics
+    - Compicated state
+    - OR
+    - May need more than one instances of the resource
+  - Examples:
+    - CD Recorder
+    - Reading/writing blocks to disk
+- Shared resources
+  - Include *space* and *time*
+  - When sharing space, always ask "Which requests gets which resource first?"
+  - When sharing time, always ask "Which requests get the resource AND when?"
+- Jobs can be categorized based on above bullets
+
+CPU vs IO bound:
+
+![Cpu vs IO boun tasks](../img/CS5305/wk3_cpu_io_bound.png)
+
+- If all process are I/O bound, ready queu will almost always be empty
+- If all process are CPU bound, the I/O devices are being under-utilized
+
+**Long Term**
+
+- Long term scheduler is for exactly as it sounds
+- Real life example: Doctors Office
+  - Calling weeks ahead to schedule a time/day would be the "Long Term Scheduler"
+  - The receptionist that tells you to wait with other patients is "Short term"
+
+![long term and short term](../img/CS5305/wk3_scheduler_place_example.png)
+
+### **Non-Preemptive and Preemptive Scheduling**
+###### [TOC](#toc)
+
+**Non-Preemptive**
+
+**Preemptive**
+
+System vs user concern in regards to scheduling metrics
+
+![sys vs usr](../img/CS5305/wk3_sys_vs_user_concern.png)
+
 ## Week 4
 ## Week 5
 ## Week 6
